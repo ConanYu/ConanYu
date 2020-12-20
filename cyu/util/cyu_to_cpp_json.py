@@ -15,7 +15,7 @@ def StrToDict(code: str, title: str) -> dict:
   ret = dict()
   ret['prefix'] = title
   ret['description'] = title
-  ret['body'] = list(code)
+  ret['body'] = [e.rstrip() for e in list(code)]
   return ret
 
 res = dict()
