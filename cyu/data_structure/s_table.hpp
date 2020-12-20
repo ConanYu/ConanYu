@@ -2,9 +2,9 @@
 #include <algorithm>
 
 namespace cyu {
-
+ 
 namespace detail {
-
+ 
 template <typename Type, typename Comp = std::less<Type>>
 class InnerMerger {
  public:
@@ -14,9 +14,9 @@ class InnerMerger {
  private:
   const Comp cmp;
 };
-
+ 
 }  // namespace detail
-
+ 
 template<typename Type, typename Merger = detail::InnerMerger<Type>>
 class STable {
  public:
@@ -48,5 +48,5 @@ class STable {
   const Merger merger;
   std::vector<std::vector<Type>> table;
 };
-
+ 
 }  // namespace cyu

@@ -4,7 +4,7 @@
 #include <vector>
 
 namespace cyu {
-
+ 
 std::vector<int> GetFail(const std::string& s) {
   const int n = s.size();
   std::vector<int> fail(n + 1);
@@ -16,7 +16,7 @@ std::vector<int> GetFail(const std::string& s) {
   }
   return fail;
 }
-
+ 
 int Match(const std::string& s, const std::string& t, std::vector<int> fail = std::vector<int>()) {
   if (fail.empty()) {
     fail = GetFail(t);
@@ -33,7 +33,7 @@ int Match(const std::string& s, const std::string& t, std::vector<int> fail = st
   }
   return -1;
 }
-
+ 
 std::vector<int> KMP(const std::string& s, const std::string& t, std::vector<int> fail = std::vector<int>()) {
   if (fail.empty()) {
     fail = GetFail(t);
@@ -51,5 +51,5 @@ std::vector<int> KMP(const std::string& s, const std::string& t, std::vector<int
   }
   return ret;
 }
-
+ 
 }  // namespace cyu

@@ -6,7 +6,7 @@
 #include "cyu/string/kmp.hpp"
 
 namespace cyu {
-
+ 
 std::vector<std::string> Split(const std::string& str, const std::string& split_str = " ", bool ignore_empty = false) {
   std::vector<int> ids = cyu::KMP(str, split_str);
   ids.push_back(static_cast<int>(str.size()));
@@ -22,5 +22,5 @@ std::vector<std::string> Split(const std::string& str, const std::string& split_
   }
   return ret;
 }
-
+ 
 }  // namespace cyu

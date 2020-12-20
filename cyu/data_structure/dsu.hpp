@@ -4,7 +4,7 @@
 #include <vector>
 
 namespace cyu {
-
+ 
 // 并查集
 class Dsu {
  public:
@@ -23,5 +23,5 @@ class Dsu {
     return true;
   }
 };
-
+ 
 }  // namespace cyu

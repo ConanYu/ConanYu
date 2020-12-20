@@ -4,7 +4,7 @@
  */
  
 #ifdef local
-#include "D:\VSCODE\local.hpp"
+# include "D:\VSCODE\local.hpp"
 template<typename T>
 ostream &operator<<(ostream &out, const vector<T> &vec) {
   bool isPrint = false;

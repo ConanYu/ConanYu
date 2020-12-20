@@ -6,7 +6,7 @@
 #include "cyu/string/kmp.hpp"
 
 namespace cyu {
-
+ 
 std::string Replace(const std::string& str, const std::string& from, const std::string& to) {
   std::vector<int> ids = cyu::KMP(str, from);
   std::string ret;
@@ -23,5 +23,5 @@ std::string Replace(const std::string& str, const std::string& from, const std::
   }
   return ret;
 }
-
+ 
 }  // namespace cyu

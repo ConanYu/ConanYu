@@ -3,7 +3,7 @@
 #include <vector>
 
 namespace cyu {
-
+ 
 // 树状数组
 // index from 1
 template<typename Type = int>
@@ -46,5 +46,5 @@ class FenwickTree {
   int n_;
   std::vector<Type> fenwick_tree_;
 };
-
+ 
 }  // namespace cyu

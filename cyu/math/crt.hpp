@@ -6,7 +6,7 @@
 #include "cyu/math/exgcd.hpp"
 
 namespace cyu {
-
+ 
 // v里每个std::pair<Type, Type>中first为被模数，second为模数
 template<typename Type>
 std::pair<Type, Type> Crt(const std::vector<std::pair<Type, Type>>& v) {
@@ -25,5 +25,5 @@ std::pair<Type, Type> Crt(const std::vector<std::pair<Type, Type>>& v) {
   }
   return std::make_pair(a, r);
 }
-
+ 
 }  // namespace cyu

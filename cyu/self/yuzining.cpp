@@ -4,9 +4,9 @@
  */
  
 #ifdef local
-#include "D:\VSCODE\local.hpp"
+# include "D:\VSCODE\local.hpp"
 #else
-#include<bits/stdc++.h>
+# include<bits/stdc++.h>
 using namespace std;
 #define debug(...) do { } while(0)
 void Main();

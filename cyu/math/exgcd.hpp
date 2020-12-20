@@ -4,7 +4,7 @@
 #include <tuple>
 
 namespace cyu {
-
+ 
 // find a, b, g that a * x + b * y = g
 // g = gcd(x, y)
 // return std::tuple<a, b, g>
@@ -15,5 +15,5 @@ std::tuple<Type, Type, Type> ExGcd(const Type& x, const Type& y) {
   std::tie(a, b, g) = ExGcd(y, x % y);
   return std::make_tuple(b, a - x / y * b, g);
 }
-
+ 
 }  // namespace cyu
