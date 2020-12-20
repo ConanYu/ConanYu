@@ -2,11 +2,13 @@ import os, json
 
 def StrToDict(code: str, title: str) -> dict:
   def FilterFunc(s: str):
+    # 可以一行放一个空格防止空行被吃掉
     if s == '':
       return False
     if '#pragma once' in s:
       return False
-    if '#include' in s:
+    # 防止吃掉重要的include
+    if '#include' in s and r'#include "D:\VSCODE\local.hpp"' != s:
       return False
     return True
 
