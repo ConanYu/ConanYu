@@ -3,12 +3,12 @@
 #include <string>
 #include <vector>
 
-#include "cyu/string/kmp.hpp"
+#include "ext/string/kmp.hpp"
 
-namespace cyu {
+namespace ext {
  
 std::vector<std::string> Split(const std::string& str, const std::string& split_str = " ", bool ignore_empty = false) {
-  std::vector<int> ids = cyu::KMP(str, split_str);
+  std::vector<int> ids = KMP(str, split_str);
   ids.push_back(static_cast<int>(str.size()));
   std::vector<std::string> ret;
   int cur = 0;
@@ -23,4 +23,4 @@ std::vector<std::string> Split(const std::string& str, const std::string& split_
   return ret;
 }
  
-}  // namespace cyu
+}  // namespace ext

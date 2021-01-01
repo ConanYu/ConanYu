@@ -4,7 +4,7 @@
 #include <functional>
 #include <vector>
 
-namespace cyu {
+namespace ext {
  
 // 表达式求值（内部采用后缀表达式求解）
 template <typename Type>
@@ -93,4 +93,4 @@ RPN<int64_t> rpn_demo({
   std::make_tuple('%', 15, [](const int64_t& x, const int64_t& y) { return x % y; }),
 });
  
-}  // namespace cyu
+}  // namespace ext

@@ -3,12 +3,12 @@
 #include <string>
 #include <vector>
 
-#include "cyu/string/kmp.hpp"
+#include "ext/string/kmp.hpp"
 
-namespace cyu {
+namespace ext {
  
 std::string Replace(const std::string& str, const std::string& from, const std::string& to) {
-  std::vector<int> ids = cyu::KMP(str, from);
+  std::vector<int> ids = KMP(str, from);
   std::string ret;
   ids.push_back(static_cast<int>(str.size()));
   int cur = 0;
@@ -24,4 +24,4 @@ std::string Replace(const std::string& str, const std::string& from, const std::
   return ret;
 }
  
-}  // namespace cyu
+}  // namespace ext

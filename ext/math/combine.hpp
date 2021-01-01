@@ -3,9 +3,9 @@
 #include <tuple>
 #include <vector>
 
-#include "cyu/math/exgcd.hpp"
+#include "ext/math/exgcd.hpp"
 
-namespace cyu {
+namespace ext {
  
 class Combine {
  public:
@@ -39,4 +39,4 @@ class Combine {
   std::vector<int> fac_, inv_;
 };
  
-}  // namespace cyu
+}  // namespace ext

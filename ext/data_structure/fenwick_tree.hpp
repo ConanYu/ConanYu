@@ -2,7 +2,7 @@
 
 #include <vector>
 
-namespace cyu {
+namespace ext {
  
 // 树状数组
 // index from 1
@@ -47,4 +47,4 @@ class FenwickTree {
   std::vector<Type> fenwick_tree_;
 };
  
-}  // namespace cyu
+}  // namespace ext

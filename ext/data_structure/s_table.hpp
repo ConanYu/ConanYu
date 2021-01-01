@@ -1,7 +1,7 @@
 #include <vector>
 #include <algorithm>
 
-namespace cyu {
+namespace ext {
  
 namespace detail {
  
@@ -49,4 +49,4 @@ class STable {
   std::vector<std::vector<Type>> table;
 };
  
-}  // namespace cyu
+}  // namespace ext

@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-namespace cyu {
+namespace ext {
  
 std::vector<int> z_function(std::string s) {
   const int n = s.size();
@@ -17,4 +17,4 @@ std::vector<int> z_function(std::string s) {
   return z;
 }
  
-}  // namespace cyu
+}  // namespace ext

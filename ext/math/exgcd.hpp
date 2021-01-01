@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <tuple>
 
-namespace cyu {
+namespace ext {
  
 // find a, b, g that a * x + b * y = g
 // g = gcd(x, y)
@@ -16,4 +16,4 @@ std::tuple<Type, Type, Type> ExGcd(const Type& x, const Type& y) {
   return std::make_tuple(b, a - x / y * b, g);
 }
  
-}  // namespace cyu
+}  // namespace ext

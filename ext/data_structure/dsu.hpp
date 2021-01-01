@@ -3,7 +3,7 @@
 #include <numeric>
 #include <vector>
 
-namespace cyu {
+namespace ext {
  
 // 并查集
 class Dsu {
@@ -24,4 +24,4 @@ class Dsu {
   }
 };
  
-}  // namespace cyu
+}  // namespace ext

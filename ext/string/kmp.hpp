@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-namespace cyu {
+namespace ext {
  
 std::vector<int> GetFail(const std::string& s) {
   const int n = s.size();
@@ -52,4 +52,4 @@ std::vector<int> KMP(const std::string& s, const std::string& t, std::vector<int
   return ret;
 }
  
-}  // namespace cyu
+}  // namespace ext
