@@ -8,6 +8,7 @@
 #else
 #include <bits/stdc++.h>
 #define DEBUG(...) do { } while (0)
+const int _______ = []() { std::ios::sync_with_stdio(false), std::cin.tie(nullptr); return 0; }();
 #endif
  
 int main() {
