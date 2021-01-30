@@ -4,19 +4,13 @@
  */
  
 #ifdef local
-# include "D:\VSCODE\local.hpp"
+#include "D:\VSCODE\debug.hpp"
 #else
-# include<bits/stdc++.h>
-using namespace std;
-#define debug(...) do { } while(0)
-void Main();
-int main() {
-  ios::sync_with_stdio(false), cin.tie(0), cout.tie(0);
-  Main();
-  return 0;
-}
+#include <bits/stdc++.h>
+#define DEBUG(...) do { } while (0)
 #endif
  
-void Main() {
+int main() {
+  std::ios::sync_with_stdio(false), std::cin.tie(nullptr);
   
 }

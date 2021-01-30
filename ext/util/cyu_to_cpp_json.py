@@ -7,7 +7,7 @@ def StrToDict(code: str, title: str) -> dict:
       return False
     if '#pragma once' in s:
       return False
-    if '#include' in s:
+    if '#include' in s and r'#include "D:\VSCODE\debug.hpp"' not in s and r'#include <bits/stdc++.h>' not in s:
       return False
     return True
 
