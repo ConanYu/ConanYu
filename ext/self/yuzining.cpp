@@ -12,6 +12,5 @@ const int _______ = []() { std::ios::sync_with_stdio(false), std::cin.tie(nullpt
 #endif
  
 int main() {
-  std::ios::sync_with_stdio(false), std::cin.tie(nullptr);
   
 }
