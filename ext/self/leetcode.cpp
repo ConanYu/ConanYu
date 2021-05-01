@@ -4,19 +4,9 @@
  */
  
 #ifdef local
-# include "D:\VSCODE\local.hpp"
-template<typename T>
-ostream &operator<<(ostream &out, const vector<T> &vec) {
-  bool isPrint = false;
-  for (auto &x : vec) {
-    out << (isPrint ? ',' : '[') << x;
-    isPrint = true;
-  }
-  out << ']';
-  return out;
-}
+# include "D:\VSCODE\debug.hpp"
 #else
-#define debug(...) do { } while(false)
+#define DEBUG(...) do { } while(false)
 #endif
  
  
@@ -24,6 +14,6 @@ ostream &operator<<(ostream &out, const vector<T> &vec) {
 #ifdef local
 void Main() {
   Solution o;
-  cout << o.solve(xxx) << '\n';
+  DEBUG(o.solve(...));
 }
 #endif
