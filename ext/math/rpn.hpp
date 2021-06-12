@@ -16,6 +16,8 @@ class RPN {
     for (const auto& o : v) {
       dict_[std::get<0>(o)] = std::make_pair(std::get<1>(o), std::get<2>(o));
     }
+    dict_['('] = std::make_pair(kLeftBucket, nullptr);
+    dict_[')'] = std::make_pair(kRightBucket, nullptr);
   }
   Type operator()(const std::string &str) {
     const int n = str.size();
