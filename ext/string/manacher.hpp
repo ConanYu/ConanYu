@@ -30,9 +30,10 @@ class Manacher {
   int GetMaxLength() {
     return max_length_;
   }
-  // index start from 1
   bool CheckIsPalindrome(int from, int to) {
-    return dp_[from + to] - 1 >= from - to + 1;
+    from++;
+    to++;
+    return dp_[from + to] - 1 >= to - from + 1;
   }
  private:
   std::vector<int> dp_;
