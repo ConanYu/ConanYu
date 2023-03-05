@@ -4,7 +4,7 @@
  */
  
 #ifdef local
-#include "D:\VSCODE\debug.hpp"
+#include "debug.hpp"
 #else
 #include <bits/stdc++.h>
 #define DEBUG(...) do { } while (0)

@@ -4,7 +4,8 @@
  */
  
 #ifdef local
-# include "D:\VSCODE\debug.hpp"
+#include "debug.hpp"
+using namespace std;
 #else
 #define DEBUG(...) do { } while(false)
 #endif
@@ -12,8 +13,7 @@
  
  
 #ifdef local
-void Main() {
-  Solution o;
-  DEBUG(o.solve(...));
+int main() {
+ 
 }
 #endif
