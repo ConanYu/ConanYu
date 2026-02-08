@@ -3,8 +3,8 @@
  * @date $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE
  */
  
-#ifdef local
-#include "debug.hpp"
+#ifdef LOCAL
+#include "local.hpp"
 #else
 #include <bits/stdc++.h>
 #define DEBUG(...) do { } while (0)

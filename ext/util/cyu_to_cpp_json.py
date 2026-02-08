@@ -7,7 +7,7 @@ def StrToDict(code: str, title: str) -> dict:
       return False
     if '#pragma once' in s:
       return False
-    if '#include' in s and r'#include "debug.hpp"' not in s and r'#include <bits/stdc++.h>' not in s:
+    if '#include' in s and r'#include "local.hpp"' not in s and r'#include <bits/stdc++.h>' not in s:
       return False
     return True
 
@@ -29,4 +29,4 @@ for path, _, files in os.walk(os.path.dirname(os.path.dirname(os.path.abspath(__
         res[name] = StrToDict(f.read(), name)
 
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cyu.cpp.json'), 'w', encoding='utf-8') as f:
-  f.write(json.dumps(res))
+  f.write(json.dumps(res, ensure_ascii=False, indent=2))
