@@ -1,9 +1,9 @@
 /**
  * @author yuzining
- * @date $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE"
+ * @date $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE
  */
  
-#ifdef local
+#ifdef LOCAL
 #include "debug.hpp"
 using namespace std;
 #else
@@ -12,7 +12,7 @@ using namespace std;
  
  
  
-#ifdef local
+#ifdef LOCAL
 int main() {
  
 }
